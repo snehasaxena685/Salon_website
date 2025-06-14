@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
-
+    
 }
 
 :root {
@@ -22,7 +22,7 @@
     --global-color-5: #fff;
     --global-color-6: #243673;
     --global-color-7: #BFD1FF;
-
+    --global-color-8: #000000; /* black */
 }
 
 body {
@@ -228,7 +228,7 @@ header ul li #NavNum:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--global-color-2);
+    background-color: var(--global-color-8);
     z-index: -1;
     opacity: .7;
 }
@@ -241,7 +241,7 @@ header ul li #NavNum:hover {
     width: 100%;
     height: 100%;
     /* background-color: var(--global-color-2); */
-    background-image: url("../img/backgroundimg.jpg");
+    background-image: url("../img/LD/s.jpg");
     z-index: -1;
     opacity: .7;
     background-position: center;
@@ -340,6 +340,7 @@ header ul li #NavNum:hover {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     align-items: center;
+    
 }
 
 .sectionSecond .fourIMG {
@@ -371,6 +372,8 @@ header ul li #NavNum:hover {
     justify-content: center;
     flex-direction: column;
     gap: 2rem;
+    font-size: 25px;
+    
 }
 
 .sectionSecond .textInfo .greet {
@@ -479,7 +482,8 @@ header ul li #NavNum:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background: url("../img/discountBackGround.jpg");
+    /* background: url("../img/LD/b.webp"); */
+    background-color: var(--global-color-1);
     z-index: -2;
 
 }
@@ -491,7 +495,7 @@ header ul li #NavNum:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--global-color-1);
+    /* background-color: var(--global-color-1); */
     z-index: -2;
     opacity: .65;
 
@@ -514,6 +518,7 @@ header ul li #NavNum:hover {
     flex-direction: column;
     gap: 15px;
     color: #fff;
+    font-size: larger;
 }
 
 .DiscountSection .textinfo h2 {
@@ -645,6 +650,7 @@ header ul li #NavNum:hover {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    
 }
 
 .sectionSix h2 {
@@ -657,6 +663,7 @@ header ul li #NavNum:hover {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    font-size: 100px;
 }
 
 .sectionSix .icon a {

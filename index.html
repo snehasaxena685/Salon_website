@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AK Salon Website</title>
+    <title>LD Luxury Salon Website</title>
 
     <!-- adding css  -->
     <link rel="stylesheet" href="./css/style.css">
@@ -14,6 +14,26 @@
 
     <!-- fontawesome  -->
     <script src="https://kit.fontawesome.com/7a6c6b42a6.js" crossorigin="anonymous"></script>
+
+    <!--animation-->
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<style>
+    .link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.link:hover {
+  color: #ff1493; /* A nice pink highlight */
+  text-shadow: 0 0 5px #ff1493;
+}
+</style>
+
+
 </head>
 
 <body>
@@ -28,7 +48,7 @@
                 <li><a href="./services.html">Services</a></li>
                 <li><a href="./portfolio.html">portfolio</a></li>
                 <li><a href="./contact.html">Contact</a></li>
-                <li><a href="#" id="NavNum">+91 3859023453</a></li>
+                <li><a   href="tel:+919910667992" id="NavNum">+91-9910667992</a></li>
             </ul>
         </nav>
     </header>
@@ -38,8 +58,7 @@
         <div class="frontPage">
             <div class="address"> Shani Bazaar Road, Block C4A, Janakpuri, Delhi</div>
             <h2 class="heading">Leena Dhamija Luxury Salon</h2>
-            <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque totam aliquid eaque, quaerat
-                obcaecati enim placeat earum qui illum distinctio!</p>
+            <p class="para"></p>
             <div class="btn">
                 <a href="#">Get Gorgeous</a>
                 <a href="#">Contact Now</a>
@@ -56,19 +75,19 @@
     <!-- section second  -->
     <section class="sectionSecond">
         <div class="fourIMG">
-            <img src="./img/home-model1.jpg" alt="">
-            <img src="./img/home-model2.jpg" alt="">
-            <img src="./img/home-model3.jpg" alt="">
-            <img src="./img/home-model4.jpg" alt="">
+            <img src="./img/work01.webp"  alt="">
+            
+            <img src="./img/LD/IMG_2516.JPG" alt="">
+            <img src="./img/LD/IMG_2415.JPG" alt="">
         </div>
 
 
         <div class="textInfo">
             <div class="greet">Welcome To</div>
             <h2 class="title">My Beauty Studio</h2>
-            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aut odio vitae. Voluptatibus
-                deleniti at ullam error, voluptates pariatur quibusdam! Corporis corrupti in molestias consequuntur
-                dolorum eligendi vel animi suscipit!</p>
+            <p class="para"> Where Beauty Meets Luxury  <br> Step into a world of elegance and indulgence, where every detail is designed to make you feel confident, glamorous, and pampered
+                
+            </p>
 
             <a href="#" class="btn">Know More</a>
         </div>
@@ -80,19 +99,19 @@
         <p>List down special Services you offer an occasions like weddings, etc</p>
 
         <div class="servicesBox">
-            <div class="box">
+            <div class="box" class="card" data-aos="fade-up" data-aos-duration="1000">
                 <h2>Weddings Makeup</h2>
                 <p>A little detail about the services you've mentioned aboved. Tell them what you do</p>
             </div>
-            <div class="box">
+            <div class="box" class="card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                 <h2>Party Makeup</h2>
                 <p>A little detail about the services you've mentioned aboved. Tell them what you do</p>
             </div>
-            <div class="box">
-                <h2>Fashion Makeup</h2>
+            <div class="box" class="card" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                <h2>HD Makeup</h2>
                 <p>A little detail about the services you've mentioned aboved. Tell them what you do</p>
             </div>
-            <div class="box">
+            <div class="box" class="card" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
                 <h2>Photo Makeup</h2>
                 <p>A little detail about the services you've mentioned aboved. Tell them what you do</p>
             </div>
@@ -100,88 +119,102 @@
     </section>
 
     <!-- discount section  -->
-    <section class="DiscountSection">
+    <section class="DiscountSection" class="card" data-aos="fade-up" data-aos-duration="1000">
 
         <div class="img">
             <img src="./img/25off.png" alt="">
         </div>
 
         <div class="textinfo">
-            <h2>Book Your Appointment Now And Get 25% Off</h2>
-            <p>Awesome Monsoon Sale - 25% Off on All Professional Make Up only 5$</p>
+            <h2><pre >         Book Your Appointment Now</pre></h2>
+            <!-- <p>Awesome Monsoon Sale - 25% Off on All Professional Make Up only 5$</p> -->
         </div>
 
         <a href="#">BOOK AN APPINTMENT</a>
     </section>
 
     <!-- transformBox -->
-    <div class="transformBox">
-        <h2>Priced Beauty Solutions</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore id earum, voluptas consectetur explicabo
-            tempore aut placeat blanditiis dolores dolorum.</p>
+    <div class="transformBox" class="card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+        <h2>EVERYTHING AT ONE PLACE</h2>
+        <p></p>
     </div>
 
     <!-- section five  -->
-    <section class="sectionFive">
-        <div class="BeautySolutions">
-            <h2>Hair Cuts</h2>
+    <section class="sectionFive" >
+        <div class="BeautySolutions" class="card" data-aos="fade-up" data-aos-duration="1000">
+            <h2>Hair</h2>
             <span></span>
             <ul>
-                <li>Women's Haircut <span>$95</span></li>
-                <li>Teen's Haircut <span>$40+</span></li>
-                <li>Stylish Haircut <span>$55</span></li>
-                <li>Children's Haircut <span>$40+</span></li>
+                <li>Women's Haircut <span></span></li>
+                <li>Men's Haircut</li>
+                <!-- <li>Stylish Haircut <span></span></li> -->
+                <li>Children's Haircut <span></span></li>
+                <li>Hair styling</li>
+                <li>Smoothening</li>
+                <li>keratin treatment</li>
+                <li>hair botox</li>
+                <li>hair spa</li>
             </ul>
         </div>
-        <div class="BeautySolutions">
+        <div class="BeautySolutions" class="card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
             <h2>Make Up</h2>
             <span></span>
             <ul>
-                <li>Women's Haircut <span>$95</span></li>
-                <li>Teen's Haircut <span>$40+</span></li>
-                <li>Stylish Haircut <span>$55</span></li>
-                <li>Children's Haircut <span>$40+</span></li>
+                <li>Party Makup <span></span></li>
+                <li>HD Makeup <span></span></li>
+                <li>Engagement Makeup</li>
+                <li>Bridal Makeup <span></span></li>
+                
             </ul>
         </div>
-        <div class="BeautySolutions">
-            <h2>Hair Color</h2>
+        <div class="BeautySolutions" class="card" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+            <h2>Beauty</h2>
             <span></span>
             <ul>
-                <li>Women's Haircut <span>$95</span></li>
-                <li>Teen's Haircut <span>$40+</span></li>
-                <li>Stylish Haircut <span>$55</span></li>
-                <li>Children's Haircut <span>$40+</span></li>
+                <li>Facials <span></span></li>
+                <li>Manicure <span></span></li>
+                <li>Pedicure <span></span></li>
+                <li>De-Tan</li>
+                <li>Full Arms Wax <span></span></li>
+                <li>Full legs Wax</li>
             </ul>
         </div>
-        <div class="BeautySolutions">
-            <h2>Skin Care</h2>
+        <div class="BeautySolutions" class="card" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+            <h2>Nails</h2>
             <span></span>
             <ul>
-                <li>Women's Haircut <span>$95</span></li>
-                <li>Teen's Haircut <span>$40+</span></li>
-                <li>Stylish Haircut <span>$55</span></li>
-                <li>Children's Haircut <span>$40+</span></li>
+                <li>Simple Nail Extensions <span></span></li>
+                <li>Engagement Nail Extensions</li>
+                <li>Gen-Z nail Extensions</li>
             </ul>
         </div>
     </section>
 
     <!-- section six  -->
-    <section class="sectionSix">
-        <h2>Review Us</h2>
+    <section class="sectionSix" class="show" class="review-section animate__animated animate__fadeInUp" style="background-color: #FEF3E2;"class="card" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000" >
+        
         <div class="icon">
-            <a href="#" class="fa-brands fa-facebook-f"></a>
-            <a href="#" class="fa-brands fa-google"></a>
-            <a href="#" class="fa-brands fa-instagram"></a>
+            
+            <h2>Our Reviews On Google</h2>
+        
+            <!-- <a href="#" class="fa-brands fa-facebook-f"></a> -->
+            <a href="https://www.google.com/search?sca_esv=d22a87f29702b322&rlz=1C1GCEA_enIN1090IN1096&sxsrf=AE3TifMyl1TimULhPIxdrn2Q4wP-2Fv9Ow:1749928454299&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E-Zgh6AnC6ZhG0_52jBXkT-U7F7AtUtI2E1IZa_jAkAehUFlDkTFXQPnmmNpVr8DguZPDjLq0zFF60UJkF0qcLJPR03inpTI-XXOSl2Dv_JsEdurEg%3D%3D&q=LEENA+DHAMIJA+LUXURY+SALON+Reviews&sa=X&ved=2ahUKEwjIn5q_z_GNAxVbr1YBHYwmIuMQ0bkNegQIJBAD&biw=1455&bih=703&dpr=1.1" class="fa-brands fa-google"></a>
+            <!-- <a href="https://www.instagram.com/leenadhamijamakeupartist?igsh=ZmZxMTF0ZDUyNXF4" class="fa-brands fa-instagram"></a> -->
         </div>
 
         <div class="imgicon">
-            <img src="./img/test150x150.jpg" alt="">
+            
+            <img src="./img/LD/rev.jpeg" alt="">
+            
+            
             <i class="fa-solid fa-quote-right"></i>
         </div>
+        <h1>Shruti Sharma</h1>
+        <p>Staff is very cooperative, all have different specialties in their fields and are best service providers! In short, they all are Upto the mark.
+Best services I got till now is - relaxing hair spa, glowing facial, amazing hair cut and beautiful nail art..
+hidden gem - coffee is super amazing..  </p>
 
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A rem soluta cupiditate, asperiores consectetur
-            voluptate, dolor deleniti assumenda laboriosam quae culpa natus iure eum quidem cum ducimus fugit tempora
-            sint. </p>
+            
     </section>
 
     <!-- beforefooter  -->
@@ -189,9 +222,7 @@
         <div class="box">
             <div class="logo">LD Beauty Salon</div>
             <div class="bf-text"></div>
-            <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ipsam sit magni et
-                consequatur, tenetur ab doloremque totam necessitatibus inventore optio qui? Inventore vel quibusdam
-                exercitationem, nulla asperiores fugiat totam!</p>
+            <p class="para">As a a luxury beauty salon offering professional makeup, hair styling, nail art, and skincare services. With a team of skilled artists and stylists, we ensure every client looks and feels their absolute best. Whether it’s a wedding, party, or everyday glow-up, we craft beauty that leaves a lasting impression.</p>
 
             <div class="bf-text">Subscribe For Offers</div>
 
@@ -204,18 +235,18 @@
         <div class="box">
             <div class="bf-text">Quick Links</div>
             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./services.html">Services</a></li>
-                <li><a href="./protfolio.html">protfolio</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./index.html" class="link">Home</a></li>
+                <li><a href="./about.html" class="link">About</a></li>
+                <li><a href="./services.html" class="link" >Services</a></li>
+                <li><a href="./portfolio.html" class="link">portfolio</a></li>
+                <li><a href="./contact.html" class="link">Contact</a></li>
             </ul>
 
             <div class="bf-text">Follow Us</div>
             <div class="icons">
                 <a href="#" class="fa-brands fa-facebook-f"></a>
-                <a href="#" class="fa-brands fa-google"></a>
-                <a href="#" class="fa-brands fa-instagram"></a>
+                <a href="https://www.google.com/search?q=leena+dhamija+luxury+salon&sca_esv=5734fedee28d1695&rlz=1C1GCEA_enIN1090IN1096&sxsrf=AE3TifPVfbb_MoqkrDoWc2pBuuK2gdX5XA%3A1749931973608&ei=xddNaNPyJJDf2roP6JL8yAc&oq=leena&gs_lp=Egxnd3Mtd2l6LXNlcnAiBWxlZW5hKgIIADIEECMYJzIKECMYgAQYJxiKBTITEC4YgAQYxwEYJxiKBRiOBRivATIEECMYJzILEC4YgAQYsQMYgwEyCBAuGIAEGLEDMg4QLhiABBjHARiOBRivATIOEC4YgAQYxwEYjgUYrwEyBRAAGIAEMgsQLhiABBiRAhiKBUioNFDqB1j4InACeACQAQSYAfkBoAGrI6oBBjAuMjIuNbgBA8gBAPgBAZgCCKACoQqoAg_CAg0QIxiABBiwAxgnGIoFwgIHEAAYsAMYHsICDhAAGIAEGLADGIYDGIoFwgIIEAAYsAMY7wXCAgsQABiABBiwAxiiBMICAhAmwgIIEAAYgAQYogTCAgUQABjvBcICBxAjGCcY6gLCAg0QLhjHARgnGOoCGK8BwgINECMY8AUYJxjJAhjqAsICFBAAGIAEGJECGLQCGIoFGOoC2AEBwgIdEC4YgAQYkQIY0QMYtAIYxwEYyAMYigUY6gLYAQHCAh0QLhiABBiRAhi0AhjHARjIAxiKBRjqAhivAdgBAcICCxAAGIAEGJECGIoFwgIKEAAYgAQYQxiKBcICChAuGIAEGEMYigXCAhAQLhiABBixAxhDGIMBGIoFwgIZEC4YgAQYFBiHAhjHARiYBRiZBRieBRivAcICDRAuGIAEGLEDGEMYigXCAhQQLhiABBiRAhjHARiKBRiOBRivAcICERAuGIAEGLEDGNEDGIMBGMcBmAMv8QUwmFvYFe3bw4gGAZAGCLoGBggBEAEYAZIHBTIuNC4yoAe2sASyBwUwLjQuMrgHzAnCBwczLTEuNi4xyAfWAQ&sclient=gws-wiz-serp" class="fa-brands fa-google"></a>
+                <a href="https://www.instagram.com/leenadhamijamakeupartist?igsh=ZmZxMTF0ZDUyNXF4" class="fa-brands fa-instagram"></a>
                 <a href="#" class="fa-brands fa-youtube"></a>
             </div>
         </div>
@@ -229,14 +260,14 @@
 
             <div class="bf-text">Call Us</div>
             <ul class="SayHi">
-                <li>Phone :+1 2334325532</li>
-                <li>Toll Free:+1 2334325532</li>
+                <li><a href="tel:+919910667992" style="color: #fff; text-decoration: none;" class="link">Phone: 09910667992</a></li>
+                
             </ul>
 
             <div class="bf-text">Find Us</div>
 
             <div class="address">
-                123 Fifth Avenue, Opp Hut, New York, USA
+                 Block C4 E, DDA LIG Flats, 211, Shani Bazaar Rd, Block C4A, Janakpuri, Delhi, 110058
             </div>
 
         </div>
@@ -244,13 +275,24 @@
 
     <!-- footer  -->
     <footer>
-        <div class="fbox">Copyright &copy; 2023 AK Beauty Salon</div>
-        <div class="fbox">Powered By AK Beauty Salon</div>
+        <div class="fbox">Copyright &copy; 2023 LD Luxury Salon</div>
+        <div class="fbox">Powered By LD Luxury Salon</div>
     </footer>
 
 
     <!-- js  -->
     <script src="./js/script.js"></script>
+
+    <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+
+
+
 </body>
 
 </html>
