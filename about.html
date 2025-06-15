@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AK Salon Website</title>
+    <title>LD Salon Website</title>
 
     <!-- adding css  -->
     <link rel="stylesheet" href="./css/style.css">
@@ -18,12 +18,20 @@
 
     <!-- fontawesome  -->
     <script src="https://kit.fontawesome.com/7a6c6b42a6.js" crossorigin="anonymous"></script>
+
+     <!--animation-->
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+
 </head>
 
 <body>
 
-    <header>
-        <a href="#" class="logo">AK Beauty Salon</a>
+   <header>
+        <a href="#" class="logo">LD LUXURY SALON</a>
         <div class="menuToggle"></div>
         <nav>
             <ul>
@@ -32,10 +40,11 @@
                 <li><a href="./services.html">Services</a></li>
                 <li><a href="./portfolio.html">portfolio</a></li>
                 <li><a href="./contact.html">Contact</a></li>
-                <li><a href="#" id="NavNum">+91 3859023453</a></li>
+                <li><a   href="tel:+919910667992" id="NavNum">+91-9910667992</a></li>
             </ul>
         </nav>
     </header>
+
 
 
     <section class="sectionFirst">
@@ -49,7 +58,7 @@
 
 
     <!-- second section  -->
-    <section class="AboutMeInDetail">
+    <section class="AboutMeInDetail"class="card" data-aos="fade-up" data-aos-duration="1000" >
         <span class="img">
             <img src="./img/LD/Leena.jpg" alt="">
         </span>
@@ -76,7 +85,7 @@ What sets Me apart is not just My skill with a brush, but My ability to make eve
                     <a  href="tel:+919910667992">+91 9910667992</a>
                 </i>
                 <i class="fa-solid fa-envelope">
-                    <a href="#">LDsalon@gamil.com</a>
+                    <a href="mailto:leenadhamijaluxurysalon@gmail.com">leenadhamijaluxurysalon@gmail.com</a>
                 </i>
             </div>
         </div>
@@ -84,42 +93,42 @@ What sets Me apart is not just My skill with a brush, but My ability to make eve
 
 
     <!-- section three  -->
-    <section class="aboutTeam-Info">
+    <section class="aboutTeam-Info"class="card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
         <div class="teamText">
-            <div class="t-team">Our Awesome Team</div>
-            <div class="t-heading">We Have Solutions</div>
-            <div class="t-lines">introducing our team of experts </div>
+            <div class="t-team">Thank you for being a part of LD family</div>
+            <div class="t-heading">LD BRIDES</div>
+            <!-- <div class="t-lines">introducing our team of experts </div> -->
         </div>
 
         <div class="teamImgInfo">
             <div class="box">
                 <div class="img">
-                    <img src="./img/artist1.jpg" alt="">
+                    <img src="./img/LD/LDBRIDES1.jpg" alt="">
                 </div>
-                <div class="t-name">Christina Kollar</div>
-                <div class="t-position">Owner</div>
+                <!-- <div class="t-name">Christina Kolla</div>
+                <div class="t-position">Owner</div> -->
             </div>
             <div class="box">
                 <div class="img">
-                    <img src="./img/artist2.jpg" alt="">
+                    <img src="./img/LD/LDBRIDES.jpg" alt="">
                 </div>
-                <div class="t-name">Christina Kollar</div>
-                <div class="t-position">Owner</div>
+                <!-- <div class="t-name">Christina Kollar</div>
+                <div class="t-position">Owner</div> -->
             </div>
             <div class="box">
                 <div class="img">
-                    <img src="./img/artist3.jpg" alt="">
+                    <img src="./img/LD/LDBRIDES2.jpg" alt="">
                 </div>
-                <div class="t-name">Christina Kollar</div>
-                <div class="t-position">Owner</div>
+                <!-- <div class="t-name">Christina Kollar</div>
+                <div class="t-position">Owner</div> -->
             </div>
             <div class="box fourthBox">
                 <div class="ak-disc">
-                    Book Your Appointment Now And Get 25% Off
+                    Book Your Appointment Now and get extra discount
                 </div>
-                <div class="ak-sale">Awesome Monsoon Sale - 25% off on All Professional Make Up from Only $59</div>
+                <div class="ak-sale">Awesome Pre-Monsoon Sale on All Professional Make Up </div>
                 <div class="btn">
-                    <a href="#">BOOK APPOINTMENT</a>
+                    <a href="contact.html#contact-form">BOOK APPOINTMENT</a>
                 </div>
             </div>
         </div>
@@ -165,8 +174,8 @@ What sets Me apart is not just My skill with a brush, but My ability to make eve
         <div class="box">
             <div class="bf-text">Say Hi! </div>
             <ul class="SayHi">
-                <li><a href="./index.html">info@example.com</a></li>
-                <li><a href="./about.html">contact@example.com</a></li>
+                <li><a href="mailto:leenadhamijaluxurysalon@gmail.com">leenadhamijaluxurysalon@gmail.com</a></li>
+                <!-- <li><a href="./about.html">contact@example.com</a></li> -->
             </ul>
 
             <div class="bf-text">Call Us</div>
@@ -186,13 +195,23 @@ What sets Me apart is not just My skill with a brush, but My ability to make eve
 
     <!-- footer  -->
     <footer>
-        <div class="fbox">Copyright &copy; 2023 LD Luxury Salon</div>
+        <div class="fbox">Copyright &copy; 2022 LD Luxury Salon</div>
         <div class="fbox">Powered By LD Luxury Salon</div>
     </footer>
 
     
     <!-- js  -->
     <script src="./js/script.js"></script>
+
+    
+    <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+
 </body>
 
 </html>

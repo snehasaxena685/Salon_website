@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AK Salon Website</title>
+    <title>LD Luxury salon Website</title>
 
     <!-- adding css  -->
     <link rel="stylesheet" href="./css/style.css">
@@ -18,24 +18,35 @@
 
     <!-- fontawesome  -->
     <script src="https://kit.fontawesome.com/7a6c6b42a6.js" crossorigin="anonymous"></script>
+
+     <!--animation-->
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
 </head>
 
 <body>
 
     <header>
-        <a href="#" class="logo">AK Beauty Salon</a>
+        <a href="#" class="logo">LD LUXURY SALON</a>
         <div class="menuToggle"></div>
         <nav>
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./services.html">Services</a></li>
-                <li><a href="./protfolio.html">protfolio</a></li>
+                <li><a href="./portfolio.html">portfolio</a></li>
                 <li><a href="./contact.html">Contact</a></li>
-                <li><a href="#" id="NavNum">+91 3859023453</a></li>
+                <li><a   href="tel:+919910667992" id="NavNum">+91-9910667992</a></li>
             </ul>
         </nav>
     </header>
+
 
 
     <section class="sectionFirst">
@@ -49,13 +60,14 @@
 
 
     <!-- section second  -->
-    <section class="aboutServices">
+    <section class="aboutServices" class="card" data-aos="fade-up" data-aos-duration="1000">
         <div class="ser-litText">Choose From Collection</div>
-        <p class="ser-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ipsum?</p>
+        <p style="font-size: larger;" class="ser-text">Discover our luxurious range of beauty services designed to enhance your natural glow. From flawless makeup and trendy hairstyles to rejuvenating facials and perfect nails — we offer everything you need for your ultimate beauty transformation</p>
 
         <div class="ser-box">
-            <div class="box">
-                <div class="img">
+            <a href="contact.html?service=Clean%20Nail%20Art" style="color: white;">
+                <div class="box">
+                <div class="img" >
                     <img src="./img/nailart_1.jpg" alt="">
                 </div>
                 <div class="boxinfo">
@@ -64,7 +76,10 @@
                         above.</p>
                 </div>
             </div>
-            <div class="box">
+            </a>
+            
+            <a href="contact.html?service=Hair%20Styling" style="color: white;" >
+                <div class="box">
                 <div class="img">
                     <img src="./img/haircut_2.jpg" alt="">
                 </div>
@@ -76,54 +91,69 @@
                 </div>
 
             </div>
+
+            </a>
+            
             <div class="box">
-                <div class="img">
-                    <img src="./img/massage_3.jpg" alt="">
+                <a href="contact.html?service=beauty" style="color: white;">
+
+                    <div class="img">
+                    <img src="./img/LD/beauty.jpg" alt="">
                 </div>
                 <div class="boxinfo">
 
-                    <div class="ser-name">Full Body Massage</div>
+                    <div class="ser-name">Beauty</div>
                     <p class="ser-discription">This is a short description elaborationg the service you have mentioned
                         above.</p>
                 </div>
+                </a>
 
             </div>
             <div class="box">
-                <div class="img">
-                    <img src="./img/cosmetics_4.jpg" alt="">
+                <a href="contact.html?service=partyHD" style="color: white;">
+
+                    <div class="img">
+                    <img src="./img/LD/work02.webp" alt="">
                 </div>
                 <div class="boxinfo">
 
-                    <div class="ser-name">Stocked Cosmetic Store</div>
+                    <div class="ser-name">Party Makeup / HD makeup</div>
                     <p class="ser-discription">This is a short description elaborationg the service you have mentioned
                         above.</p>
                 </div>
+                </a>
 
             </div>
             <div class="box">
-                <div class="img">
-                    <img src="./img/spa_5.jpg" alt="">
+                <a href="contact.html?service=engagement" style="color: white;">
+                    <div class="img">
+                    <img src="./img/LD/IMG_8349.JPG" alt="">
                 </div>
 
                 <div class="boxinfo">
 
-                    <div class="ser-name">Fully Equipped Spa</div>
+                    <div class="ser-name">Engagement makeup</div>
                     <p class="ser-discription">This is a short description elaborationg the service you have mentioned
                         above.</p>
                 </div>
+
+                </a>
 
             </div>
             <div class="box">
-                <div class="img">
-                    <img src="./img/botox_6.jpg" alt="">
+                <a href="contact.html?service=bride" style="color: white;" >
+                    <div class="img">
+                    <img src="./img/LD/3.webp" alt="">
                 </div>
-                <div class="boxinfo">
+                <div class="boxinfo" id="bridal_makeup">
 
-                    <div class="ser-name">Authorized Botox</div>
+                    <div class="ser-name">Bridal Makeup</div>
                     <p class="ser-discription">This is a short description elaborationg the service you have mentioned
                         above.</p>
                 </div>
 
+
+                </a>
             </div>
         </div>
     </section>
@@ -140,14 +170,19 @@
             <p>Awesome Monsoon Sale - 25% Off on All Professional Make Up only 5$</p>
         </div>
 
-        <a href="#">BOOK AN APPINTMENT</a>
+        <a href="contact.html#contact-form">BOOK AN APPINTMENT</a>
     </section>
 
     <!-- ----slider----- -->
-    <section class="imgslidertext">
+    
+
+
+
+        <section class="imgslidertext">
+            
         <div class="imgslider">
             <img src="./img/bestbrindalOffer1.jpg" alt="" class="slide">
-            <img src="./img/bestbrindalOffer2.jpg" alt="" class="slide">
+            <img src="./img/LD/bridal.webp" alt="" class="slide">
             <img src="./img/bestbrindalOffer3.jpg" alt="" class="slide">
 
             <i class="fa-solid fa-chevron-left prev" onclick="goPrev()"></i>
@@ -155,34 +190,36 @@
         </div>
 
         <div class="slideText">
-            <div class="st-heading">The Best Bridal Makeup Offer</div>
-            <p class="lit-text">You Can Highligh a special service here. This can then be bifurcated into smaller steps
-                or parts as done below. Describe it here.</p>
+            <div class="st-heading">The Best Bridal Makeup Forever</div>
+            <p class="lit-text" style="color: black;" >"Discover our full portfolio — just tap on the PORTFOLIO section"</p>
 
             <div class="lit-service">
                 <div class="textinfo">
                     <div class="ti-head" >Pre-Wedding Photo shoot</div>
-                    <p class="des">This is a shor description elaborating the service you have mentioned above.</p>
+                    <!-- <p class="des">This is a shor description elaborating the service you have mentioned above.</p> -->
                 </div>
                 <div class="textinfo">
                     <div class="ti-head" >The Engagement Day</div>
-                    <p class="des">This is a shor description elaborating the service you have mentioned above.</p>
+                    <!-- <p class="des">This is a shor description elaborating the service you have mentioned above.</p> -->
                 </div>
                 <div class="textinfo">
                     <div class="ti-head" >The Grand Wedding Day</div>
-                    <p class="des">This is a shor description elaborating the service you have mentioned above.</p>
+                    <!-- <p class="des">This is a shor description elaborating the service you have mentioned above.</p> -->
                 </div>
             </div>
         </div>
+        
     </section>
 
+
+
+  
+<!-- beforefooter  -->
     <div class="beforefooter">
         <div class="box">
-            <div class="logo">Ak Beauty Salon</div>
-            <div class="bf-text">AnmolKeCode</div>
-            <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ipsam sit magni et
-                consequatur, tenetur ab doloremque totam necessitatibus inventore optio qui? Inventore vel quibusdam
-                exercitationem, nulla asperiores fugiat totam!</p>
+            <div class="logo">LD Beauty Salon</div>
+            <div class="bf-text"></div>
+            <p class="para">As a a luxury beauty salon offering professional makeup, hair styling, nail art, and skincare services. With a team of skilled artists and stylists, we ensure every client looks and feels their absolute best. Whether it’s a wedding, party, or everyday glow-up, we craft beauty that leaves a lasting impression.</p>
 
             <div class="bf-text">Subscribe For Offers</div>
 
@@ -195,18 +232,18 @@
         <div class="box">
             <div class="bf-text">Quick Links</div>
             <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./services.html">Services</a></li>
-                <li><a href="./protfolio.html">protfolio</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./index.html" class="link">Home</a></li>
+                <li><a href="./about.html" class="link">About</a></li>
+                <li><a href="./services.html" class="link" >Services</a></li>
+                <li><a href="./portfolio.html" class="link">portfolio</a></li>
+                <li><a href="./contact.html" class="link">Contact</a></li>
             </ul>
 
             <div class="bf-text">Follow Us</div>
             <div class="icons">
                 <a href="#" class="fa-brands fa-facebook-f"></a>
-                <a href="#" class="fa-brands fa-google"></a>
-                <a href="#" class="fa-brands fa-instagram"></a>
+                <a href="https://www.google.com/search?q=leena+dhamija+luxury+salon&sca_esv=5734fedee28d1695&rlz=1C1GCEA_enIN1090IN1096&sxsrf=AE3TifPVfbb_MoqkrDoWc2pBuuK2gdX5XA%3A1749931973608&ei=xddNaNPyJJDf2roP6JL8yAc&oq=leena&gs_lp=Egxnd3Mtd2l6LXNlcnAiBWxlZW5hKgIIADIEECMYJzIKECMYgAQYJxiKBTITEC4YgAQYxwEYJxiKBRiOBRivATIEECMYJzILEC4YgAQYsQMYgwEyCBAuGIAEGLEDMg4QLhiABBjHARiOBRivATIOEC4YgAQYxwEYjgUYrwEyBRAAGIAEMgsQLhiABBiRAhiKBUioNFDqB1j4InACeACQAQSYAfkBoAGrI6oBBjAuMjIuNbgBA8gBAPgBAZgCCKACoQqoAg_CAg0QIxiABBiwAxgnGIoFwgIHEAAYsAMYHsICDhAAGIAEGLADGIYDGIoFwgIIEAAYsAMY7wXCAgsQABiABBiwAxiiBMICAhAmwgIIEAAYgAQYogTCAgUQABjvBcICBxAjGCcY6gLCAg0QLhjHARgnGOoCGK8BwgINECMY8AUYJxjJAhjqAsICFBAAGIAEGJECGLQCGIoFGOoC2AEBwgIdEC4YgAQYkQIY0QMYtAIYxwEYyAMYigUY6gLYAQHCAh0QLhiABBiRAhi0AhjHARjIAxiKBRjqAhivAdgBAcICCxAAGIAEGJECGIoFwgIKEAAYgAQYQxiKBcICChAuGIAEGEMYigXCAhAQLhiABBixAxhDGIMBGIoFwgIZEC4YgAQYFBiHAhjHARiYBRiZBRieBRivAcICDRAuGIAEGLEDGEMYigXCAhQQLhiABBiRAhjHARiKBRiOBRivAcICERAuGIAEGLEDGNEDGIMBGMcBmAMv8QUwmFvYFe3bw4gGAZAGCLoGBggBEAEYAZIHBTIuNC4yoAe2sASyBwUwLjQuMrgHzAnCBwczLTEuNi4xyAfWAQ&sclient=gws-wiz-serp" class="fa-brands fa-google"></a>
+                <a href="https://www.instagram.com/leenadhamijamakeupartist?igsh=ZmZxMTF0ZDUyNXF4" class="fa-brands fa-instagram"></a>
                 <a href="#" class="fa-brands fa-youtube"></a>
             </div>
         </div>
@@ -214,32 +251,49 @@
         <div class="box">
             <div class="bf-text">Say Hi! </div>
             <ul class="SayHi">
-                <li><a href="./index.html">info@example.com</a></li>
-                <li><a href="./about.html">contact@example.com</a></li>
+                               <li><a href="mailto:leenadhamijaluxurysalon@gmail.com">leenadhamijaluxurysalon@gmail.com</a></li>
+                <!-- <li><a href="./about.html">contact@example.com</a></li> -->
+
             </ul>
 
             <div class="bf-text">Call Us</div>
             <ul class="SayHi">
-                <li>Phone :+1 2334325532</li>
-                <li>Toll Free:+1 2334325532</li>
+                <li><a href="tel:+919910667992" style="color: #fff; text-decoration: none;" class="link">Phone: 09910667992</a></li>
+                
             </ul>
 
             <div class="bf-text">Find Us</div>
 
             <div class="address">
-                123 Fifth Avenue, Opp Hut, New York, USA
+                 Block C4 E, DDA LIG Flats, 211, Shani Bazaar Rd, Block C4A, Janakpuri, Delhi, 110058
             </div>
 
-        </div> 
+        </div>
     </div>
 
-
+    <!-- footer  -->
     <footer>
-        <div class="fbox">Copyright &copy; 2023 AK Beauty Salon</div>
-        <div class="fbox">Powered By AK Beauty Salon</div>
+        <div class="fbox">Copyright &copy; 2022 LD Luxury Salon</div>
+        <div class="fbox">Powered By LD Luxury Salon</div>
     </footer>
 
+
     <script src="./js/script.js"></script>
+
+
+    <!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/slider.js"></script>
+
 
 </body>
 
