@@ -1,82 +1,54 @@
+console.log("script loaded");
 
+// Select menu toggle and related elements
+const menuToggle = document.querySelector('.menuToggle');
+const header = document.querySelector('header');
+const section = document.querySelector('section');
 
-let menuToggle = document.querySelector('.menuToggle');
-let header = document.querySelector('header');
-let section = document.querySelector('section');
-// let section = document.getElementsByTagName('*');
+// Toggle menu on click
+menuToggle.onclick = () => {
+    console.log("Toggle clicked!");
+    header.classList.toggle('active');
+    section.classList.toggle('active');
+};
 
-
-menuToggle.onclick = function () {
-    header.classList.toggle('active')
-    section.classList.toggle('active')
-}
-
+// Image slider functionality
 const slides = document.querySelectorAll('.slide');
-
-// console.log(slides)
-
 let counter = 0;
-// console.log(i)
 
-
-
+// Position all slides side by side
 slides.forEach((slide, index) => {
-    slide.style.left = `${index * 100}%`
-
+    slide.style.left = `${index * 100}%`;
 });
 
+// Update slide position
+const slideImg = () => {
+    slides.forEach((slide) => {
+        slide.style.transform = `translateX(-${counter * 100}%)`;
+    });
+};
+
+// Optional: Previous/Next button handlers (if buttons exist)
 const goPrev = () => {
-    counter--
-    slideImg()
-}
+    if (counter > 0) {
+        counter--;
+        slideImg();
+    }
+};
+
 const goNext = () => {
-    counter++ 
-    slideImg()
-}
-
-
-const slideImg = () => {
-    for (let i = 0; i < slides.length; i++) {
-        if (counter >= slides.length) {
-            slides.forEach(slide => {
-                slide.style.transform = `translateX(-${counter * 0}%)`
-            });
-        } else {
-            slides.forEach(slide => {
-                slide.style.transform = `translateX(-${counter * 100}%)`
-            });
-        }
+    if (counter < slides.length - 1) {
+        counter++;
+        slideImg();
     }
-}
-const slideImg = () => {
-    for (let i = 0; i < slides.length; i++) {
-        if (counter >= slides.length) {
-            slides.forEach(slide => {
-                slide.style.transform = `translateX(-${counter * 0}%)`
-            });
-        } else {
-            slides.forEach(slide => {
-                slide.style.transform = `translateX(-${counter * 100}%)`
-            });
-        }
-    }
-}
+};
 
-
+// Auto-slide back-and-forth
+let direction = 1; // 1 = forward, -1 = backward
 setInterval(() => {
-    if (counter < 2) {
-        console.log(counter++)
-        slides.forEach((slide, index) => {
-            slide.style.left = `${index * 100}%`
-            slide.style.transform = `translateX(-${counter * 100}%)`
-        });
-    } 
-    
-    else {
-        console.log(counter--)
-        slides.forEach((slide, index) => {
-            slide.style.left = `${index * 100}%`
-            slide.style.transform = `translateX(-${counter * 100}%)`
-        }); 
-    }
+    if (counter >= slides.length - 1) direction = -1;
+    else if (counter <= 0) direction = 1;
+
+    counter += direction;
+    slideImg();
 }, 2000);

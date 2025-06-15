@@ -115,7 +115,11 @@ header ul li #NavNum:hover {
     }
 
     header.active nav {
-        display: block;
+        display: block !important;
+  position: absolute;
+  top: 60px;
+  background: #000;
+  width: 100%;
     }
 
     header ul li {
