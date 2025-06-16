@@ -1,5 +1,9 @@
 require("dotenv").config(); // Load environment variables
 
+app.use(cors({ origin: 'https://snehasaxena685.github.io' }));
+
+
+
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
