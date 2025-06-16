@@ -52,3 +52,46 @@ setInterval(() => {
     counter += direction;
     slideImg();
 }, 2000);
+
+
+
+
+
+
+
+
+
+
+//frontend-backend
+
+
+
+document.getElementById("contact-form").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value; 
+    const email = document.getElementById("email").value;
+    const service = document.getElementById("service").value;
+    const message = document.getElementById("message").value;
+
+    const data = { name, phone, email, service, message };
+
+    try {
+      const res = await fetch("http://localhost:5000/api/enquiry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (res.ok) {
+        alert("Your enquiry was submitted successfully!");
+        document.getElementById("contact-form").reset();
+      } else {
+        alert("Submission failed. Try again.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Something went wrong.");
+    }
+});
