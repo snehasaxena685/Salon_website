@@ -78,7 +78,7 @@ document.getElementById("contact-form").addEventListener("submit", async functio
     const data = { name, phone, email, service, message };
 
     try {
-      const res = await fetch("http://localhost:5000/api/enquiry", {
+      const res = await fetch("https://salon-website-s5pb.onrender.com/api/enquiry", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
